@@ -1,0 +1,10 @@
+--Mdir .
+--cc
+-LDFLAGS -lwebsockets
++incdir+src/vidbo_0/src
+-CFLAGS -Isrc/vidbo_0/src
+src/vidbo_0/example/top.v
+--top-module top
+--exe
+src/vidbo_0/src/vidbo.c
+src/vidbo_0/example/tb.cpp

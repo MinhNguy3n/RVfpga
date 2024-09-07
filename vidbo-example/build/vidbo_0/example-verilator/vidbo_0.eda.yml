@@ -1,0 +1,27 @@
+version: 0.2.1
+dependencies:
+  ::vidbo:0: []
+files:
+- file_type: cSource
+  name: src/vidbo_0/src/vidbo.c
+  core: ::vidbo:0
+- file_type: cSource
+  is_include_file: true
+  name: src/vidbo_0/src/vidbo.h
+  core: ::vidbo:0
+- file_type: verilogSource
+  name: src/vidbo_0/example/top.v
+  core: ::vidbo:0
+- file_type: cppSource
+  name: src/vidbo_0/example/tb.cpp
+  core: ::vidbo:0
+hooks: {}
+name: vidbo_0
+parameters: {}
+tool_options:
+  verilator:
+    libs:
+    - -lwebsockets
+toplevel: top
+vpi: []
+flow_options: {}
